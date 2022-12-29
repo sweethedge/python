@@ -9,3 +9,11 @@
 ■ List Comprehension
 # list1의 x에 대해서 g(x)를 해 달라. 근데 x가 홀수이면
 [g(x) for x in list1 if int(x) % 2 == 1]
+
+■ 정규표현식 쓰는 법
+p = re.compile('정규표현식')
+m = p.match('조사할 문자열')
+if m:
+	print('Match found: ', m.group())
+else:
+	print('no match')
